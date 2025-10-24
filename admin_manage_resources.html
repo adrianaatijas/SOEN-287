@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Manage Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="manageResources.js"></script>
+</head>
+<body>
+    <header><h1>Admin - Manage Resources</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Manage Resources</a></li>
+          <li><a href="#">Bookings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+   <main>
+    
+    <section id="add-resource">
+    <h2>Add New Resource</h2>
+    
+    <form id="resourceForm" onsubmit="add(); return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter resource name" required>
+  
+      <label for="description">Description:</label>
+      <input type="text" id="description" placeholder="Enter description">
+  
+      <label for="location">Location:</label>
+      <input type="text" id="location" placeholder="Enter location">
+  
+      <label for="capacity">Capacity:</label>
+      <input type="number" id="capacity" min="1" placeholder="Enter capacity">
+  
+      <label for="image">Image:</label>
+      <input type="file" id="image">
+  
+      <button type="">Add Resource</button>
+    </form>
+  </section>
+
+  <section id="resource-list">
+    <h2>Current Resources</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Capacity</th>
+          <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="resourceTableBody">
+        <!-- JS will add rows here -->
+      </tbody>
+    </table>
+  </section>
+  
+
+
+</main>
+    <footer>
+
+
+
+
+
+      
+    </footer>
+</body>
+</html>
